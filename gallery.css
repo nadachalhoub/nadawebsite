@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body .thumbnail{
+    align-items: center;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 50px 120px;
+  }
+  
+  .thumbnail {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.1);
+  }
+  
+  #up1{
+    background: rgb(225, 196, 217);
+    height: 40px;
+  }
+  
+  #dropdown-menu{
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    color: rgb(99, 91, 99);
+    padding-right: 4px;
+    padding-left: 4px;
+    background: rgb(196, 174, 193);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: x-large;
+}
+  
+.dropdown-content{
+    cursor: pointer;
+    display: none; 
+    background: #2e2b2d;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    left: 0;
+    font-weight: normal;
+    font-size: medium;
+}
+
+#dropdown-menu li{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    list-style-type: none;
+}
+
+#dropdown-menu ul{
+    margin: 0;
+    padding: 0;
+}
+#dropdown-menu a{
+    text-decoration: underline;
+    color: rgb(223, 135, 164);
+}
+#dropdown-menu:hover .dropdown-content{
+    display: block;
+}
+#dropdown-menu li:hover{
+    background: rgb(202, 177, 195);
+}
+
+.icon {
+    display: inline-block;
+    background: linear-gradient(to right, #9d5e86,#9d5e86);
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(171, 143, 143, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: 30px;
+    cursor: pointer;
+  }
+  
+  .lightbox .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .lightbox:target {
+    display: flex;
+  }
+  

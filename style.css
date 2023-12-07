@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+*,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Serif Display', serif;;
+}
+
+body{
+    background-color: rgb(247, 240, 241);
+}
+
+ul{
+    list-style: none;
+}
+main{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns:28% 1fr;
+    grid-gap: 1rem;
+    filter: drop-shadow(0 0 0.4rem black);
+}
+.personal,
+.skills,
+.Languages {
+    padding: 1rem;
+    line-height: 2;
+}
+.pink-progress-bar {
+    width: 100%;
+    background-color: rgb(197, 173, 205);
+    height: 10px;
+    border-radius: 5px; 
+    margin-top: 4px; 
+}
+
+.pink-progress {
+    height: 100%;
+    background-color: #4d3b4f;
+    border-radius: 5px;
+}
+
+.left{
+    background-color: rgb(197, 173, 205);
+}
+
+.left-image {
+    position: relative;
+}
+.left-image img{
+    width: 100%;
+}
+.left-image h2{
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+}
+.right{
+    background-color: white;
+    padding: 1.5rem;
+}
+.Education{
+    line-height: 2;
+}
+.Education ul{
+    margin: 2rem 0;
+
+}
+.date{
+    color: rgb(96, 87, 99);
+}
+.current{
+    background-color: rgb(199, 207, 105);
+    color: rgb(96, 87, 99);
+    padding: 0.2rem;
+    border-radius: 2px;
+}
+.Courses {
+    margin-top: 1rem;
+}
+.Courses ul{
+    margin: 2rem 0;
+}
+.course-list {
+    margin-left: 0;
+    padding-left: 1.5rem;
+}
+
+.footer{
+    background-color: rgb(197, 173, 205);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+a.instagram-link {
+    color: #511f48; 
+}
